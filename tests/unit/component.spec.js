@@ -180,7 +180,7 @@ describe('when the input is changed by the user', () => {
       wrapper.trigger('keypress', { key: ',' })
 
       wrapper.setValue('€1,2,34,567.89')
-      expect(wrapper.element.value).toBe('€12.34')
+      expect(wrapper.element.value).toBe('€1,234,567.89')
 
       wrapper.setValue('€1,234,567.89')
       expect(wrapper.element.value).toBe('€1,234,567.89')
